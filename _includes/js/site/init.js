@@ -10,6 +10,9 @@
 			// add an extra class to the <body> element for JS-only styling
 			$("body").addClass("js");
 	
+	        // hide scroll bar
+	        window.scrollTo(0,1);
+	
 			// init vol control
 			volume.init({
 				ajaxPath: "./_includes/php/Ajax.php",

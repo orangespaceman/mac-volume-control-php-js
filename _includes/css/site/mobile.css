@@ -3,10 +3,12 @@
  */
 	/* resets */
 		* 		{ margin:0; padding:0; }
+		
 		body	{
 			font:62.5%/1.25 Helvetica, Arial, sans-serif;
 			background:#000;
 		}
+		
 		ul	 	{ list-style:none; }
 		a 		{ text-decoration:none; }
 
@@ -17,9 +19,6 @@
 			text-align: center;
 			top: 50%;
 			width: 100%;
-			
-			margin-top: -160px;
-			min-width: 480px;
 		}
 		
 		#wrapper {
@@ -27,28 +26,24 @@
 			position: relative;
 			text-align: left;
 			background: -webkit-gradient(linear,left bottom,left top,color-stop(0.09, rgb(0,0,0)),color-stop(0.78, rgb(122,122,122)));
-			
-			height: 320px;
-			width: 480px;
 		}
 		
 		
-		/* header */
-			header {
+		/* footer */
+			footer {
 				overflow:auto;
 			}
 		
 			h1 {
 				font-size:24px;
 				color:#f4f4f4;
-				margin:5px 10px;
 				float:left;
 			}
 			
 			h2 {
 				float:right;
 				font-size:16px;
-				margin:8px 10px;
+				margin:4px 10px 0 0;
 			}
 		
 			h2 a {
@@ -135,8 +130,8 @@
 		/* loader */	
 			span#loading {
 				position:absolute;
-				right:5px;
-				bottom:5px;
+				right:10px;
+				bottom:10px;
 				display:block;
 				width:16px;
 				height:16px;
@@ -153,63 +148,63 @@
 		
 	/* landscape (as default) */
 		/*@media (max-width: 480px) {*/
-			body {
-				/*background:red;*/
-			}
-			
-			header {
-				margin-bottom:20px;
-			}
-			
 			#horizon {
-				margin-top:-104px;
+				margin-top:-160px;
 			}
 	
 			#wrapper {
 				width:480px;
-				height:208px; /* 320 - bumf */
+				height:320px;
 			}
 			
 			ul#vol {
-				height:110px;
-				margin:0 30px;
+                padding-top:50px;
+				height:200px;
+				margin:0 30px 20px 30px;
 			}
 			
 			ul#vol li {
 				width:30px;
 				margin-right:7px;
 			}
+			
+			h2 {
+			    margin-right:20px;
+			}
+			
+			footer {
+                width:420px;
+                margin:0 auto;
+			}
 		/*}*/
 		
 	/* portrait */	
 		@media (max-width: 320px) {
-			body {
-				/*background:blue;*/
-			}
-			
-			header {
-				margin-bottom:40px;
-			}
-			
+
 			#horizon {
 				min-width: 320px;
-				margin-top: -178px;
+				margin-top: -240px;
 			}
 			
 			#wrapper {
 				width:320px;
-				height:356px; /* 480 - bumf */
+				height:480px;
 			}
 			
 			ul#vol {
-				height:230px;
-				width:297px;
-				margin:0 auto;
-				padding:0;
+			    width:300px;
+				height:340px;
+				margin:0 auto 20px auto;
+				padding-top:50px;
 			}
 			
 			ul#vol li {
 				width:20px;
 				margin-right:7px;
+			}
+			
+			footer {
+			    width:300px;
+			    margin:0 auto;
 			}
 		}
